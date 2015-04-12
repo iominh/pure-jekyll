@@ -6,37 +6,33 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="/lib/pure/pure.css">
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
 
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+      <div id="layout">
+          <!-- Menu toggle -->
+          <a href="#menu" id="menuLink" class="menu-link">
+              <!-- Hamburger icon -->
+              <span></span>
+          </a>
 
-          {{ content }}
+          {% include menu.html %}
 
+          <div id="main">
+              <div class="header">
+                  <h1>{{page.title}}</h1>
+                  <h2>A subtitle for your page goes here</h2>
+              </div>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name is<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+              {{ content }}
 
+      </div>
+      <script include="js/main.js"></script>
     </body>
 </html>

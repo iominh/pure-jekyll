@@ -1,0 +1,27 @@
+{
+  "name": "jekyll-purecss",
+  "version": "0.0.1",
+  "homepage": "https://github.com/minhongrails/jekyll-purecss",
+  "authors": [
+    "minh.90.nguyen@gmail.com"
+  ],
+  "description": "Jekyll with PureCSS",
+  "main": "index.html",
+  "keywords": [
+    "jekyll",
+    "purecss",
+    "gulp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "~0.6.0"
+  }
+}

@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: Jekyll Pure
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+relative_permalinks: true
